@@ -1,0 +1,102 @@
+body{
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-family: verdana;
+  background-color: grey;
+}
+
+.resaltado{
+  background-color: yellow;
+}
+
+#menu-principal{
+  padding: 10px 0px;
+}
+
+.titulo{
+  background-color: aliceblue;
+  text-align: center;
+  padding: 10px;
+}
+
+a[href='resaltado']{
+  color: red;
+}
+
+img[src$='.jpg']{
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+*{
+  margin: 1vh 1vw;
+}
+
+/*modificara solo los elementos h2 que esten presedidos por un h1*/
+h1 + h2 {
+  text-decoration: underline;
+}
+
+h2 - p {
+  text-align: justify;
+}
+
+article> h2{
+  text-decoration: underline;
+}
+
+ul li{
+  list-style-type: circle;
+}
+/*a[href],
+a[href='http://www.google.com'],
+img[src|-=svg],
+img[src|='icono'],
+[title*='descripcion']
+el simbolo de $ busque siempre el final de la palabra
+^al principio del valor del atributo
+~el atributo tiene multiples valores separados por espacio
+|al principio o en todo el contenido pero seguido de un -*/
+
+/*Pseudo clases*/
+a[href="http://"]:visited{
+  color: purple;
+}
+
+a:hover{
+  color: green;
+}
+
+input:focus{
+  width: 160px;
+  height: 140px;
+}
+
+p::first-letter{
+  text-transform: capitalize;
+}
+
+p::first-line{
+  font-size: 32px;
+}
+
+p::selection{
+
+}
+/*Pseudo elementos
+::before::after
+:first-child
+:last-child*/
+#ingredientes>ul>li:first-child>a::after{
+  content: '" - after"'
+}
+
+#ingredientes>ul>li:last-child>a::before{
+  content: '"before - "'
+}
+
+#ingredientes>ul>li:nth-child(2)>a::after{
+  content: '"hijo #2"'
+}

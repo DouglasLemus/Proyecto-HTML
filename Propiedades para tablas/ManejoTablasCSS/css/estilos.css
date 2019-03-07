@@ -1,0 +1,41 @@
+table{
+  width: 50%;
+  border-collapse: collapse;
+}
+table, th, td{
+  border: 1px solid black;
+}
+
+td, th{
+  width: 100px;
+  height: 30px;
+}
+
+th{
+  text-align: right;
+  vertical-align: top;
+}
+
+td{
+  text-align: left;
+  vertical-align: bottom;
+}
+
+tr:nth-child(odd){
+  background-color: #D1D1D1;
+}
+/*Text-aling es para ordenar horizontalmente
+  vertical-aling es para ordenar vertical los campos que recibe son
+  *baseline
+  *bottom
+  *middle
+  *sub
+  *Super
+  *text-bottom
+  *text-top
+  *top
+  *Inherit
+
+Parametros nth-child
+  odd - Representa elementos cuya posición numérica en una serie de hermanos es impar: 1, 3, 5, etc.
+  even - Representa elementos cuya posición numérica en una serie de hermanos es par: 2, 4, 6, etc.*/
