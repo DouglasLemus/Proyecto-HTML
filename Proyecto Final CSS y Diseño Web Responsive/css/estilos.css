@@ -1,9 +1,6 @@
 #cabecera{
 	background: #5b7989;
 	border-radius: 10px 10px 0px 0px;
--moz-border-radius: 10px 10px 0px 0px;
--webkit-border-radius: 10px 10px 0px 0px;
-	border: 0px solid #000000;
 }
 
 h1{
@@ -11,12 +8,11 @@ h1{
 	text-shadow: 1px 2px #02010a;
 	border: 10px;
 	font-family: "Dancing Script";
-	display:inline;
+
  }
 
-.enlace{
-	color: white;
-	text-align: right;
+a{
+	align-items: center;
 }
 
 body{
