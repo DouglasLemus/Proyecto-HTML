@@ -8,7 +8,7 @@ h1{
 	text-shadow: 1px 2px #02010a;
 	border: 10px;
 	font-family: "Dancing Script";
-
+	display:inline;
  }
 
 a{
@@ -18,4 +18,58 @@ a{
 body{
 	font-family: "Dancing Script";
 	background-color:  #02010a;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+	display:inline;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.Central{
+	background-color: #82c3a6;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.imagenes {
+  width:50%;
+  float:left;
+}
+
+div div { border: solid;
+              width: 30%;
+              height: 400px;
+              margin: 1%;
+              float: left;
+						background-color:  #d5c75f;}
+
+@media screen and (max-width: 720px) {
+    div div { border: solid;
+    width: 90%;
+    height: 400px;
+    margin: 5%;
+	background-color:  #d5c75f;}
 }
