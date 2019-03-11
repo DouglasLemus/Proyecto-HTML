@@ -27,16 +27,16 @@ header
 	color:white;
 }
 
-article
-{
-	box-sizing: border-box;
-	float:left;
-	height: 100%;
-	background-color: grey;
-	padding: 2%;
-	text-align: center;
-	height: 400px;
-}
+	article
+	{
+		box-sizing: border-box;
+		float:left;
+		height: 100%;
+		background-color: grey;
+		padding: 2%;
+		text-align: center;
+		height: 400px;
+	}
 
 	#columna1
 	{
