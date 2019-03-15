@@ -1,19 +1,17 @@
 html,body{
   margin:0;
   padding:0;
-  background-color: #02010a;
+  background-color: black;
   font-family:'Dancing Script';
   color: white;
   text-align: center;
 }
-
 .contenedor{
-  width: 960px;
+  width: 900px;
   margin:auto;
   border-radius: 25px;
   animation: slideIn 3s;
 }
-
 /*header*/
 header{
   background-color: #5b7989;
@@ -21,7 +19,6 @@ header{
   display: flex;
   flex-direction: row;
 }
-
 /*Menu del header*/
 header a,header a:visited,header a:link{
   color: white;
@@ -38,38 +35,24 @@ header a,header a:visited,header a:link{
 .seleccion{
   text-decoration: none;
 }
-
 /*section 1*/
 .uno{
   background-color: #82c3a6;
   text-align: center;
 }
 .imagen3{
-  width: 75%;
-  height: 80%;
+  width: 40%;
+  height: 40%;
 }
-
 /*section 2*/
 .dos{
   background-color: #d5c75f;
-	text-align: center;
 }
 .imagen1,.imagen2{
   width: 75%;
   height: 80%;
   box-shadow: 2px 2px 2px black;
 }
-
-.imagen4{
-  width: 100%;
-  height: 90%;
-}
-
-.imagen5{
-  width: 90%;
-  height: 90%;
-}
-
 .contenedor2{
   display: flex;
   flex-direction:row;
@@ -77,23 +60,6 @@ header a,header a:visited,header a:link{
   color: black;
   padding:50px 0 40px 0;
 }
-
-.contenedor3{
-  display: flex;
-  flex-direction:row;
-  text-align: center;
-  background-color: #d5c75f;
-  padding:50px 0 40px 0;
-}
-
-.contenedor4{
-  display: flex;
-  flex-direction:row;
-  text-align: center;
-  background-color: #d5c75f;
-  padding:50px 0 40px 0;
-}
-
 /*Translate y Rotate*/
 .imagen1:hover{
   transform: translate(20px,-5px);
@@ -103,7 +69,6 @@ header a,header a:visited,header a:link{
   transform: rotate(10deg);
   box-shadow: 2px 2px 2px #82c3a6;
 }
-
 /*footer*/
 div[class*="columna"]{
   display: flex;
@@ -118,32 +83,6 @@ footer{
   border-radius: 0 0 10px 10px;
   text-align: center;
 }
-
-#Retrato1{
-	filter: blur(10px);
-}
-
-#RetratoGris{
-	filter: grayscale(100%);
-}
-
-#Retrato3{
-	filter: sepia(90%);
-}
-
-/*animacion*/
-@keyframes slideIn {
-  0%{
-    margin-top:150%;
-  }
-  60%{
-    margin-top:-5%;
-  }
-  100%{
-    margin-top:0%;
-  }
-}
-
 /*media queries*/
 @media (max-width:600px) {
   .contenedor{
@@ -161,14 +100,6 @@ footer{
     display: flex;
     flex-direction:column;
   }
-	.contenedor3{
-    display: flex;
-    flex-direction:column;
-  }
-	.contenedor4{
-    display: flex;
-    flex-direction:column;
-  }
   footer{
     display: flex;
     flex-direction: column;
@@ -176,5 +107,17 @@ footer{
   div[class*="columna"]{
     padding-left: 0;
     padding-bottom: 5%;
+  }
+}
+/*animacion*/
+@keyframes slideIn {
+  0%{
+    margin-top:150%;
+  }
+  60%{
+    margin-top:-5%;
+  }
+  100%{
+    margin-top:0%;
   }
 }
